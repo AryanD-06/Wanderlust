@@ -97,7 +97,7 @@ app.use("/",userRouter);
 
 
 app.get("/", (req, res) => {
-    res.send("Welcome to Wanderlust!");
+    res.render("home");
 });
 
 app.all("*", (req,res,next) => {
